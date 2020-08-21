@@ -1,0 +1,32 @@
+<div class="logo">
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="" class="rounded-circle" width="30" height="30" alt="">
+    </a>
+    <span class="navbar-text">
+       Welcome to fitnesstrainer Appointment Application
+    </span>
+  </nav>
+
+</div>
+<div >
+  <nav class="navbar navbar-expand-sm navbar-light bg-secondary">
+    <button class="btn btn-primary ml-4 mr-4" (click)="landingpage()">Home</button>
+    <button class="btn btn-primary mr-4" (click)="placeAppointment()">Place Appointment</button>
+  <button class="btn btn-primary mr-4" (click)="viewAppointment()">View Appointment</button>
+  <button class="btn btn-primary mr-4" (click)="contactUspage()">Contact Us</button>
+
+  </nav>
+
+  
+</div>
+
+
+<div class="sidebar">
+  <button (click)="landingpage()">Home</button><br>
+  <button (click)="placeAppointment()">Place Appointment</button><br>
+  <button (click)="viewAppointment()">View Appointment</button><br>
+  <button (click)="contactUspage()">Contact Us</button>
+
+</div>
+<router-outlet></router-outlet>
